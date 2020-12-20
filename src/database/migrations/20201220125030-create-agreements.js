@@ -17,7 +17,7 @@ module.exports = {
       proposal_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: 'users', key: 'id' },
+        references: { model: 'proposals', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
